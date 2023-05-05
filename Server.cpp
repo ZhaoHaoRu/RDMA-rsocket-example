@@ -6,7 +6,6 @@
 #include <string>
 #include <netinet/in.h>
 #include <rdma/rsocket.h>
-#include "Epoll.h"
 
 
 const int TIME_OUT = 1000;
@@ -87,19 +86,5 @@ int main(int argc, char *argv[])
         }
     }
    
-    
-    
-    // bzero(buffer,256);
-
-    // while(true) {
-    //     n = rread(newsockfd,buffer,255);
-    //     if (n < 0) error("ERROR reading from socket");
-    //     printf("Here is the message: %s\n",buffer);
-    //     std::string message;
-    //     std::cout << "server want to send: " << std::endl;
-    //     std::cin >> message;
-    //     n = rwrite(newsockfd, message.c_str() ,18);
-    //     if (n < 0) error("ERROR writing to socket");
-    // }
     return 0; 
 }

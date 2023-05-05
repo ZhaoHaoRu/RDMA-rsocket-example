@@ -9,7 +9,6 @@ find_library(RDMACM_LIBRARY rdmacm)
 
 link_libraries(pthread ${IBVERBS_LIBRARY} ${RDMACM_LIBRARY})
 
-# add_executable(server Server.cpp Epoll.cpp)
-add_executable(server EpollServer.cpp Epoll.cpp)
+add_executable(server Server.cpp Epoll.cpp)
 add_executable(client Client.cpp Epoll.cpp)
 
